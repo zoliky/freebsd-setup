@@ -80,7 +80,8 @@ fi
 # Install utilities and fonts
 install_packages \
   mpv vim fzf dfc zip htop wget kitty rclone rsync meson lsblk \
-  yt-dlp mixertui hack-font fastfetch portmaster zsh ohmyzsh
+  yt-dlp mixertui hack-font fastfetch portmaster poudriere \
+  zsh ohmyzsh
 
 # Install Firefox
 install_packages firefox
