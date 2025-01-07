@@ -117,8 +117,8 @@ doas sysrc kld_list+="cuse"
 doas sysrc kld_list+="fusefs"
 
 # Change the default shell to Zsh
-if which zsh > /dev/null 2>&1; then
-  doas chsh -s $(which zsh) $USER
+if which zsh > /dev/null 2>&1 && [ "$SHELL" != "$(which zsh)" ]; then
+  doas chsh -s "$(which zsh)" "$USER"
 fi
 
 # Add user to necessary groups
