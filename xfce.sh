@@ -113,6 +113,10 @@ xfconf-query -c xfwm4 \
              -n -t string -s '|HMC'
 
 xfconf-query -c xfce4-session \
+             -p /compat/LaunchGNOME \
+             -n -t 'bool' -s 'true'
+
+xfconf-query -c xfce4-session \
              -p /general/SaveOnExit \
              -n -t 'bool' -s 'false'
 
