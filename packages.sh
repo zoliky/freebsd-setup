@@ -1,6 +1,8 @@
 #!/bin/sh
 
 set -- \
+    CharisSIL \
+    CharisSILCompact \
     aisleriot \
     audacity \
     calibre \
@@ -30,6 +32,7 @@ set -- \
     python3 \
     ro-hunspell \
     ruby \
+    sbcl \
     sox \
     telegram-desktop \
     tex-xetex \
