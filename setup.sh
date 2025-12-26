@@ -54,14 +54,14 @@ install_packages git
 
 # Install the Ports Collection
 if [ ! -d "/usr/ports" ] || [ -z "$(ls -A /usr/ports)" ]; then
-  doas git clone --depth 1 https://git.FreeBSD.org/ports.git -b 2025Q2 /usr/ports
+  doas git clone --depth 1 https://git.FreeBSD.org/ports.git -b 2025Q4 /usr/ports
 fi
 
 # Install X.Org
 install_packages xorg
 
 # Install Intel Graphics and enable i915kms at boot
-install_packages drm-kmod libva-intel-driver mesa-libs mesa-dri
+install_packages drm-kmod
 doas sysrc kld_list+=i915kms
 
 # Enable powerd for dynamic CPU frequency scaling
